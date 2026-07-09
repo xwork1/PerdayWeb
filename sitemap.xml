@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://perday.appouse.dev/</loc><xhtml:link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/"/></url>
+  <url><loc>https://perday.appouse.dev/privacy/</loc><xhtml:link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/privacy/"/></url>
+  <url><loc>https://perday.appouse.dev/terms/</loc><xhtml:link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/terms/"/></url>
+  <url><loc>https://perday.appouse.dev/account-deletion/</loc><xhtml:link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/account-deletion/"/></url>
+  <url><loc>https://perday.appouse.dev/support/</loc><xhtml:link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/support/"/></url>
+  <url><loc>https://perday.appouse.dev/en/</loc></url>
+  <url><loc>https://perday.appouse.dev/en/privacy/</loc></url>
+  <url><loc>https://perday.appouse.dev/en/terms/</loc></url>
+  <url><loc>https://perday.appouse.dev/en/account-deletion/</loc></url>
+  <url><loc>https://perday.appouse.dev/en/support/</loc></url>
+</urlset>

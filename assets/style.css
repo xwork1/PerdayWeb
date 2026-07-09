@@ -1,0 +1,219 @@
+/* Perday — marka: dark #11161F, gold #F4B82A, orange #FB7A3C.
+   İmza öğesi: çentik (tally) motifi — "her güne bir çentik". */
+
+:root {
+  --bg: #11161F;
+  --card: #1F2937;
+  --card-deep: #171e2a;
+  --gold: #F4B82A;
+  --orange: #FB7A3C;
+  --text: #F1F5F9;
+  --slate: #94A3B8;
+  --dim: #64748B;
+  --line: rgba(148, 163, 184, 0.14);
+  --radius: 18px;
+  --font-display: "Archivo", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 0;
+}
+.brand { display: flex; align-items: center; gap: 12px; color: var(--text); font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: 0.01em; }
+.brand:hover { text-decoration: none; }
+.brand img { width: 34px; height: 34px; border-radius: 9px; display: block; }
+.header-nav { display: flex; align-items: center; gap: 22px; font-size: 0.88rem; }
+.header-nav a { color: var(--slate); font-weight: 500; }
+.header-nav a:hover { color: var(--text); text-decoration: none; }
+.lang-switch {
+  font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em;
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px;
+  color: var(--slate) !important;
+}
+.lang-switch:hover { border-color: var(--gold); color: var(--gold) !important; }
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px;
+  align-items: center; padding: 64px 0 88px;
+}
+.eyebrow {
+  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--orange);
+  display: block; margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.6rem, 5.5vw, 4rem); line-height: 1.04;
+  letter-spacing: -0.025em; margin-bottom: 20px;
+}
+.hero h1 em { font-style: normal; color: var(--gold); }
+.hero .lede { color: var(--slate); font-size: 1.08rem; max-width: 46ch; margin-bottom: 32px; }
+.store-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.store-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 12px 18px; color: var(--text); font-weight: 600; font-size: 0.92rem;
+}
+.store-chip:hover { text-decoration: none; border-color: var(--gold); }
+.store-chip .soon {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--bg); background: var(--gold);
+  border-radius: 6px; padding: 2px 7px; font-weight: 700;
+}
+.store-chip svg { width: 20px; height: 20px; fill: var(--slate); }
+
+/* ---------- İmza: çentik panosu ---------- */
+.tally-board {
+  background: linear-gradient(160deg, var(--card) 0%, var(--card-deep) 100%);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 34px 34px 26px; position: relative; overflow: hidden;
+}
+.tally-board::after {
+  /* zemine kazınmış dev, silik çentik — doku */
+  content: ""; position: absolute; right: -30px; bottom: -46px;
+  width: 190px; height: 190px; opacity: 0.05; pointer-events: none;
+  background:
+    linear-gradient(var(--text), var(--text)) 20px 0 / 10px 100% no-repeat,
+    linear-gradient(var(--text), var(--text)) 60px 0 / 10px 100% no-repeat,
+    linear-gradient(var(--text), var(--text)) 100px 0 / 10px 100% no-repeat,
+    linear-gradient(var(--text), var(--text)) 140px 0 / 10px 100% no-repeat;
+  transform: rotate(8deg);
+}
+.tally-label {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--slate); margin-bottom: 20px;
+  display: flex; justify-content: space-between; gap: 12px;
+}
+.tally-label strong { color: var(--gold); font-weight: 700; }
+.tally-svg { width: 100%; height: auto; display: block; }
+.tally-svg line {
+  stroke: var(--text); stroke-width: 7; stroke-linecap: round;
+  stroke-dasharray: 120; stroke-dashoffset: 120;
+  animation: strokeIn 0.45s ease-out forwards;
+}
+.tally-svg line.cross {
+  stroke: var(--gold); stroke-dasharray: 160; stroke-dashoffset: 160;
+}
+.tally-svg line.today { stroke: var(--orange); }
+.tally-caption {
+  margin-top: 18px; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--slate); display: flex; align-items: baseline; gap: 10px;
+}
+.tally-caption .count {
+  font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1;
+}
+@keyframes strokeIn { to { stroke-dashoffset: 0; } }
+/* çizgiler sırayla çizilir — gecikmeler inline style ile veriliyor */
+@media (prefers-reduced-motion: reduce) {
+  .tally-svg line { animation: none; stroke-dashoffset: 0; }
+}
+
+/* ---------- Özellikler ---------- */
+section { padding: 34px 0; }
+.section-head { margin-bottom: 28px; max-width: 60ch; }
+.section-head h2 {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.7rem;
+  letter-spacing: -0.015em; margin-bottom: 8px;
+}
+.section-head p { color: var(--slate); }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.feature {
+  background: var(--card-deep); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px;
+}
+.feature .icon {
+  width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
+  background: rgba(244, 184, 42, 0.12); margin-bottom: 14px;
+}
+.feature .icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.feature h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; margin-bottom: 6px; }
+.feature p { color: var(--slate); font-size: 0.9rem; }
+
+/* ---------- Offline şeridi ---------- */
+.strip {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, rgba(244,184,42,0.07), rgba(251,122,60,0.05)),
+    var(--card-deep);
+  padding: 30px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center;
+}
+.strip .badge {
+  font-family: var(--font-mono); font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 0.16em; color: var(--bg); background: var(--gold);
+  padding: 8px 14px; border-radius: 10px; white-space: nowrap;
+}
+.strip h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
+.strip p { color: var(--slate); font-size: 0.92rem; }
+
+/* ---------- Plus ---------- */
+.plus { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; color: var(--slate); font-size: 0.92rem; }
+.plus .name { font-family: var(--font-display); font-weight: 800; color: var(--gold); font-size: 1.05rem; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--line); margin-top: 56px; padding: 30px 0 44px;
+  display: flex; flex-wrap: wrap; gap: 14px 26px; align-items: center; justify-content: space-between;
+  color: var(--dim); font-size: 0.85rem;
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.footer-links a { color: var(--slate); }
+.footer-links a:hover { color: var(--gold); }
+
+/* ---------- Doküman (legal) sayfaları ---------- */
+.doc { max-width: 720px; margin: 0 auto; padding: 40px 0 80px; }
+.doc h1 {
+  font-family: var(--font-display); font-weight: 800; font-size: 2.1rem;
+  letter-spacing: -0.02em; margin-bottom: 6px;
+}
+.doc .updated {
+  font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em;
+  color: var(--dim); margin-bottom: 34px; display: block;
+}
+.doc h2 {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.25rem;
+  margin: 34px 0 10px; letter-spacing: -0.01em;
+}
+.doc p, .doc li { color: var(--slate); }
+.doc strong { color: var(--text); font-weight: 600; }
+.doc ul, .doc ol { padding-left: 22px; margin: 10px 0; }
+.doc li { margin-bottom: 8px; }
+.doc .note {
+  border-left: 3px solid var(--gold); background: var(--card-deep);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 18px 0;
+  font-size: 0.92rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 880px) {
+  .hero { grid-template-columns: 1fr; gap: 36px; padding: 40px 0 56px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .strip { grid-template-columns: 1fr; }
+  .header-nav { gap: 14px; }
+  .header-nav .hide-sm { display: none; }
+}
