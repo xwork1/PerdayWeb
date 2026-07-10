@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perday — Her güne bir çentik</title>
-  <meta name="description" content="Perday: alışkanlık takibi. Serini koru, rozet kazan, arkadaşlarınla yarış — internet olmasa bile. Kayıt olmadan dene.">
+  <title>Perday — A tally for every day</title>
+  <meta name="description" content="Perday: habit tracking. Keep your streak, earn badges, challenge your friends — even without internet. Try it without signing up.">
   <link rel="icon" type="image/png" href="/assets/icon.png">
   <link rel="apple-touch-icon" href="/assets/icon.png">
-  <meta property="og:title" content="Perday — Her güne bir çentik">
-  <meta property="og:description" content="Alışkanlık takibi: seriler, rozetler, arkadaşlar. Offline-first.">
+  <meta property="og:title" content="Perday — A tally for every day">
+  <meta property="og:description" content="Habit tracking: streaks, badges, friends. Offline-first.">
   <meta property="og:image" content="https://perday.appouse.dev/assets/icon.png">
   <meta property="og:url" content="https://perday.appouse.dev/">
-  <link rel="alternate" hreflang="en" href="https://perday.appouse.dev/en/">
-  <link rel="alternate" hreflang="tr" href="https://perday.appouse.dev/">
+  <link rel="alternate" hreflang="tr" href="https://perday.appouse.dev/tr/">
+  <link rel="alternate" hreflang="en" href="https://perday.appouse.dev/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -23,102 +23,97 @@
     <header class="site-header">
       <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="34" height="34">Perday</a>
       <nav class="header-nav" aria-label="Site">
-        <a class="hide-sm" href="#ozellikler">Özellikler</a>
-        <a href="/support/">Destek</a>
-        <a class="lang-switch" href="/en/" lang="en" hreflang="en">EN</a>
+        <a class="hide-sm" href="#features">Features</a>
+        <a href="/support/">Support</a>
+        <a class="lang-switch" href="/tr/" lang="tr" hreflang="tr">TR</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div>
-          <span class="eyebrow">Alışkanlık takibi</span>
-          <h1>Her güne<br>bir <em>çentik</em>.</h1>
-          <p class="lede">Alışkanlıklarını işaretle, serini koru, rozet kazan,
-            arkadaşlarınla yarış. İnternet olmasa bile çalışır — sen devam et,
-            gerisi senkronize olur.</p>
+          <span class="eyebrow">Habit tracking</span>
+          <h1>A <em>tally</em><br>for every day.</h1>
+          <p class="lede">Mark your habits, protect your streak, earn badges,
+            race your friends. Works even without internet — you keep going,
+            the rest syncs itself.</p>
           <div class="store-row">
             <span class="store-chip">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.4.4-.6 1-.6 1.8v16.8c0 .8.2 1.4.6 1.8l.1.1 9.4-9.4v-.2L3.7 1.7l-.1.1zM16.2 15.4 13 12.2v-.2l3.2-3.2 4 2.3c1.1.6 1.1 1.7 0 2.3l-4 2.3-.1-.1zM4.8 22.5l10.3-5.9-2.9-2.9-7.4 8.8zM4.8 1.5l7.4 8.8 2.9-2.9L4.8 1.5z"/></svg>
-              Google Play <span class="soon">Yakında</span>
+              Google Play <span class="soon">Soon</span>
             </span>
             <span class="store-chip">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.54c0-2.4 1.96-3.55 2.05-3.6-1.12-1.63-2.86-1.86-3.47-1.88-1.47-.15-2.88.87-3.63.87-.75 0-1.9-.85-3.13-.83-1.6.03-3.09.94-3.92 2.38-1.68 2.9-.43 7.2 1.2 9.55.8 1.15 1.75 2.44 3 2.4 1.2-.05 1.66-.78 3.12-.78 1.45 0 1.86.78 3.13.75 1.3-.02 2.12-1.17 2.9-2.33.92-1.33 1.3-2.63 1.32-2.7-.03-.01-2.54-.98-2.57-3.83zM14.66 5.4c.66-.8 1.1-1.9 1-3-.95.04-2.1.63-2.78 1.43-.6.7-1.14 1.83-1 2.9 1.06.09 2.13-.53 2.78-1.33z"/></svg>
-              App Store <span class="soon">Yakında</span>
+              App Store <span class="soon">Soon</span>
             </span>
           </div>
         </div>
 
-        <figure class="tally-board" aria-label="21 günlük seri, çentiklerle sayılıyor">
-          <div class="tally-label"><span>SU İÇ — GÜNLÜK</span><strong>SERİ SÜRÜYOR</strong></div>
+        <figure class="tally-board" aria-label="A 21-day streak counted in tally marks">
+          <div class="tally-label"><span>DRINK WATER — DAILY</span><strong>STREAK ALIVE</strong></div>
           <svg class="tally-svg" viewBox="0 0 348 262" role="img" aria-hidden="true">
-            <!-- 1. grup -->
             <line x1="18"  y1="14" x2="18"  y2="112" style="animation-delay:.05s"/>
             <line x1="40"  y1="14" x2="40"  y2="112" style="animation-delay:.14s"/>
             <line x1="62"  y1="14" x2="62"  y2="112" style="animation-delay:.23s"/>
             <line x1="84"  y1="14" x2="84"  y2="112" style="animation-delay:.32s"/>
             <line class="cross" x1="6" y1="98" x2="96" y2="26" style="animation-delay:.41s"/>
-            <!-- 2. grup -->
             <line x1="136" y1="14" x2="136" y2="112" style="animation-delay:.52s"/>
             <line x1="158" y1="14" x2="158" y2="112" style="animation-delay:.61s"/>
             <line x1="180" y1="14" x2="180" y2="112" style="animation-delay:.70s"/>
             <line x1="202" y1="14" x2="202" y2="112" style="animation-delay:.79s"/>
             <line class="cross" x1="124" y1="98" x2="214" y2="26" style="animation-delay:.88s"/>
-            <!-- 3. grup -->
             <line x1="254" y1="14" x2="254" y2="112" style="animation-delay:.99s"/>
             <line x1="276" y1="14" x2="276" y2="112" style="animation-delay:1.08s"/>
             <line x1="298" y1="14" x2="298" y2="112" style="animation-delay:1.17s"/>
             <line x1="320" y1="14" x2="320" y2="112" style="animation-delay:1.26s"/>
             <line class="cross" x1="242" y1="98" x2="332" y2="26" style="animation-delay:1.35s"/>
-            <!-- 4. grup (alt sıra) -->
             <line x1="18"  y1="148" x2="18"  y2="246" style="animation-delay:1.46s"/>
             <line x1="40"  y1="148" x2="40"  y2="246" style="animation-delay:1.55s"/>
             <line x1="62"  y1="148" x2="62"  y2="246" style="animation-delay:1.64s"/>
             <line x1="84"  y1="148" x2="84"  y2="246" style="animation-delay:1.73s"/>
             <line class="cross" x1="6" y1="232" x2="96" y2="160" style="animation-delay:1.82s"/>
-            <!-- bugünün çentiği -->
             <line class="today" x1="136" y1="148" x2="136" y2="246" style="animation-delay:2.05s"/>
           </svg>
-          <figcaption class="tally-caption"><span class="count">21</span> gün üst üste — bugünün çentiği az önce atıldı</figcaption>
+          <figcaption class="tally-caption"><span class="count">21</span> days in a row — today's tally just landed</figcaption>
         </figure>
       </section>
 
-      <section id="ozellikler">
+      <section id="features">
         <div class="section-head">
-          <h2>Basit bir fikir: bugün yap, işaretle</h2>
-          <p>Perday alışkanlık kurmanın etrafındaki her şeyi hallediyor —
-            sana sadece çentiği atmak kalıyor.</p>
+          <h2>One simple idea: do it today, mark it</h2>
+          <p>Perday handles everything around building a habit — all that's
+            left for you is the tally.</p>
         </div>
         <div class="feature-grid">
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4-4 5.5-4 9.5a4 4 0 0 0 8 0c0-1.5-.5-2.5-1-3.5-2 1-2-1.5-3-6z"/><path d="M12 22a6.5 6.5 0 0 0 6.5-6.5C18.5 11 15 9 15 9"/></svg></div>
-            <h3>Seri takibi</h3>
-            <p>Her tamamlanan gün serini büyütür. En uzun serini kır, rekorunu gör.</p>
+            <h3>Streak tracking</h3>
+            <p>Every completed day grows your streak. Break your record, watch it climb.</p>
           </article>
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
-            <h3>Akıllı hatırlatmalar</h3>
-            <p>Saatli veya aralıklı bildirimler; bildirimden tek dokunuşla +1 veya ertele.</p>
+            <h3>Smart reminders</h3>
+            <p>Timed or interval notifications; +1 or snooze right from the notification.</p>
           </article>
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></div>
-            <h3>Rozetler &amp; seviye</h3>
-            <p>Tutarlılık XP kazandırır. 19 rozetlik galeriyi doldurmak sende.</p>
+            <h3>Badges &amp; levels</h3>
+            <p>Consistency earns XP. A 19-badge gallery is waiting to be filled.</p>
           </article>
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-            <h3>Arkadaşlar &amp; meydan okumalar</h3>
-            <p>Davet koduyla katıl, liderlik tablosunda yarış, arkadaşını dürt.</p>
+            <h3>Friends &amp; challenges</h3>
+            <p>Join with an invite code, race on the leaderboard, poke a friend.</p>
           </article>
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 2 20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.17-2.65"/><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"/><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"/><path d="M5 13a10 10 0 0 1 5.24-2.76"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
-            <h3>İnternetsiz de çalışır</h3>
-            <p>Uçakta, metroda, dağ başında — işaretle. Bağlanınca kendiliğinden senkronize olur.</p>
+            <h3>Works offline</h3>
+            <p>On a plane, in the subway, up a mountain — mark it. It syncs when you're back.</p>
           </article>
           <article class="feature">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></div>
-            <h3>Kayıt olmadan başla</h3>
-            <p>Misafir modunda hemen dene; istediğinde hesabını bağla, verilerin seninle gelir.</p>
+            <h3>Start without an account</h3>
+            <p>Try it instantly in guest mode; link an account whenever you want — your data comes with you.</p>
           </article>
         </div>
       </section>
@@ -127,27 +122,28 @@
         <div class="strip">
           <span class="badge">OFFLINE-FIRST</span>
           <div>
-            <h3>Alışkanlık beklemez, uygulama da beklemesin</h3>
-            <p>Perday önce cihazına yazar, sonra buluta. Bağlantı koptuğunda hiçbir
-              çentik kaybolmaz — tekrar bağlandığında her şey yerli yerinde.</p>
+            <h3>Habits don't wait — neither should your app</h3>
+            <p>Perday writes to your device first, the cloud second. When the
+              connection drops, no tally is lost — reconnect and everything
+              falls into place.</p>
           </div>
         </div>
       </section>
 
       <section>
         <p class="plus"><span class="name">Perday Plus</span>
-          sınırsız alışkanlık · seri dondurma · arkadaşlar ve meydan okumalar —
-          fiyatlar uygulama içinde.</p>
+          unlimited habits · streak freeze · friends and challenges —
+          prices shown in the app.</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>© 2026 Perday</span>
-      <nav class="footer-links" aria-label="Yasal">
-        <a href="/privacy/">Gizlilik Politikası</a>
-        <a href="/terms/">Kullanım Koşulları</a>
-        <a href="/account-deletion/">Hesap Silme</a>
-        <a href="/support/">Destek</a>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/account-deletion/">Account Deletion</a>
+        <a href="/support/">Support</a>
       </nav>
     </footer>
   </div>

@@ -8,11 +8,12 @@ yayınlanır.
 
 | Yol | İçerik |
 |-----|--------|
-| `/` | Landing (TR) — `/en/` İngilizce |
-| `/privacy/` | Gizlilik Politikası (store zorunlu) |
-| `/terms/` | Kullanım Koşulları |
-| `/account-deletion/` | Hesap silme adımları (Play Console zorunlu) |
-| `/support/` | Destek + SSS (App Store zorunlu) |
+| `/` | Landing (EN, varsayılan) — `/tr/` Türkçe |
+| `/privacy/` | Privacy Policy (store zorunlu) — TR: `/tr/privacy/` |
+| `/terms/` | Terms of Use — TR: `/tr/terms/` |
+| `/account-deletion/` | Hesap silme adımları (Play Console zorunlu) — TR: `/tr/account-deletion/` |
+| `/support/` | Destek + SSS (App Store zorunlu) — TR: `/tr/support/` |
+| `/en/*` | Eski EN yollarından köke meta-refresh yönlendirmeleri (silme) |
 | `assets/` | style.css + logo |
 
 Marka: dark `#11161F`, gold `#F4B82A`, orange `#FB7A3C`. Tipografi:
